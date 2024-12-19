@@ -16,3 +16,16 @@
 body{
     font-family: "dana woff";
 }
+
+/* header start */
+
+.nav{
+    background-color: rgb(197, 197, 197);
+    display: flex;
+    justify-content: space-around;
+}
+
+.menu{
+    display: flex;
+    justify-content: space-around;
+}
