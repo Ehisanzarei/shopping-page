@@ -1,0 +1,18 @@
+@font-face {
+    font-family: "dana ttf";
+    src: url("./dana/@ghaleb_fre.ttf") format("ttf");
+}
+@font-face {
+    font-family: "dana woff";
+    src: url("./dana/@ghaleb_fre\(1\).woff") format("woff");
+}
+
+
+*{
+    box-sizing: border-box;
+    margin: 0px;
+}
+
+body{
+    font-family: "dana woff";
+}
