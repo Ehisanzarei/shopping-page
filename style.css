@@ -47,6 +47,12 @@ body{
     padding-left: 1rem;
 }
 
+.nav_container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .nav_right{
     display: flex;
     justify-content: space-between;
@@ -111,9 +117,6 @@ body{
 
 /* header bottom */
 
-.header_bottom{
-
-}
 
 .image_container{
     display: flex;
@@ -163,9 +166,7 @@ body{
 
 /* ////////////////////// bubbles /////////////////////// */
 
-/* .bubbles{
-    position: relative;
-} */
+
 
 .bubble{
     position: absolute;
@@ -282,19 +283,7 @@ body{
 
 /* all products */
 
-.main{
-    
-}
-
-.all_products{
-    
-}
-
-.container{
-    
-}
-
-.all_products_title_container{
+.products_title_container{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -302,7 +291,7 @@ body{
     font-size: 18px;
 }
 
-.all_products_title_container::after{
+.products_title_container::after{
     content: "";
     display:inline-block;
     width: 100%;
@@ -310,7 +299,7 @@ body{
     background-color: black;
 }
 
-.all_products_title_container::before{
+.products_title_container::before{
     content: "";
     display:inline-block;
     width: 100%;
@@ -318,13 +307,14 @@ body{
     background-color: black;
 }
 
-.all_products_title{
-    width: 28rem;
+.products_title{
+    text-wrap-mode: nowrap;
+    padding: 0 0.7rem;
 }
 
 .products{
     display: grid;
-    grid-template-columns:16rem 16rem 16rem 16rem;
+    grid-template-columns: 16rem 16rem 16rem 16rem;
     justify-content: space-between;
     flex-wrap: wrap;
     padding-bottom: 5rem;
@@ -339,35 +329,25 @@ body{
     -moz-border-radius: 0.5rem;
     -ms-border-radius: 0.5rem;
     -o-border-radius: 0.5rem;
+    border: 0.1px solid #000;
+    overflow: hidden;
 }
 
-/* best products */
-
-.best_products_title_container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    font-size: 18px;
-}
-
-.best_products_title_container::after{
-    content: "";
-    display:inline-block;
+.product_img_container{
     width: 100%;
-    height: 0.1rem ;
-    background-color: black;
+    height: 15rem;
+    background-color: #fff;
 }
 
-.best_products_title_container::before{
-    content: "";
-    display:inline-block;
-    width: 100%;
-    height: 0.1rem ;
-    background-color: black;
+/* start footer */
+
+.footer{
+    height: 8rem;
+    background-color: var(--darkRed);
 }
 
-.best_products_title{
-    width: 35rem;
-}
-
+/* .footer_container{
+    height: 10rem;
+    background-color: var(--lightRed);
+    margin-top: 2rem;
+} */
