@@ -1,0 +1,107 @@
+:root{
+    --darkRed: #bb1422;
+    --lightRed: #ce6a72;
+    --pink: #fb96d5;
+    --lightPink: #f8c3dd;
+    --bubble_color: #f6e8e8;
+}
+
+/* header start */
+
+.header_top{
+    background-color: var(--darkRed);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 5rem;
+}
+
+.container{
+    width: 73rem;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    overflow: hidden;
+}
+
+.nav_container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav_right{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu{
+    display: flex;
+    justify-content: space-between;
+    padding-right: 0;
+}
+
+.menu_item{
+    list-style: none;
+}
+
+.menu_link{
+    text-decoration: none;
+    color: #fff;
+    margin-left: 2rem;
+    font-size: 20px;
+
+}
+
+.sign_in,.sign_up,.menu_link{
+    transition: all 0.2s 30ms ease;
+    -webkit-transition: all 0.2s 30ms ease;
+    -moz-transition: all 0.2s 30ms ease;
+    -ms-transition: all 0.2s 30ms ease;
+    -o-transition: all 0.2s 30ms ease;
+}
+
+.menu_link:hover,.sign_in:hover,.sign_up:hover{
+    color: #fbbd59;
+}
+
+.logo_container{
+    padding: 2rem;
+}
+
+.nav_left{
+    display: flex;
+}
+
+.shopping_card_icon{
+    width: 1.7rem;
+    margin-left: 0.7rem ;
+}
+
+.sing_in_up{
+    display: flex;
+    align-items: center;
+}
+
+.sign_up{
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    margin: 0 1rem;
+}
+
+.sign_in{
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    margin-right: 1rem;
+}
+
+
+.separator{
+    width: 0.1rem;
+    height: 0.7rem;
+    background-color: #fff;
+}
