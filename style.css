@@ -1,5 +1,8 @@
 :root{
+    --white: #fff;
+    --black: #000;
     --darkRed: #bb1422;
+    --veryDarkRed: #780c15;
     --lightRed: #ce6a72;
     --pink: #fb96d5;
     --lightPink: #f8c3dd;
@@ -321,15 +324,63 @@ body{
 /* vip products */
 
 .vip_products_section{
-    background-color: #f7bd13 ;
+    background-color: #f7c01c ;
+}
+
+.vip_products_section_container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.vip_products_title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 2rem;
+    color: var(--white);
+}
+
+.vip_section_btn_container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 8rem;
+    height: 2.8rem;
+    border: 2px solid #ffffff86;
+    margin-top: 1rem;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    transition: all 0.2s ease;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -ms-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+}
+
+.vip_section_btn_container:hover{
+    border: 2px solid #ffffff;
+}
+
+.vip_section_btn_link{
+    text-decoration: none;
+    color: var(--white);
+    font-size: 17px;
+}
+
+
+.vip_products_container{
+    width: 55rem;
 }
 
 .vip_products{
     display: grid;
-    grid-template-columns: repeat(5,13rem);
+    grid-template-columns: repeat(4,12.5rem);
     grid-template-rows: 20rem;
     justify-content: space-between;
-
 }
 
 .vip_product{

@@ -55,10 +55,6 @@ body{
     background-color: var(--bubble_color);
 }
 
-.page_title_text{
-
-}
-
 .title_container{
     display: flex;
     align-items: center;
@@ -122,6 +118,12 @@ body{
 .choose_box:active{
     color: var(--white);
     background-color: var(--lightRed);
+    transform: translateY(-0.4rem);
+    -webkit-transform: translateY(-0.4rem);
+    -moz-transform: translateY(-0.4rem);
+    -ms-transform: translateY(-0.4rem);
+    -o-transform: translateY(-0.4rem);
+    box-shadow: 0 0.7rem 12px #00000055;
 }
 
 .choose_box_text{
@@ -167,4 +169,49 @@ body{
 
 .back_btn_text{
     font-size: 20px;
+}
+
+/* Project Responsive */
+
+@media only screen and (max-width: 1200px) {
+    .container {
+        max-width: 60rem;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .container {
+        max-width: 45rem;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .container {
+        max-width: 33rem;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .container {
+        max-width: 23rem;
+    }
+    .page_title{
+        margin: 2rem 0 1rem;
+        height: 5rem;
+    }
+    .page_title_text{
+        font-size: 22px;
+    }
+    .title_text{
+        font-size: 19px;
+        margin: 0 0.4rem;
+    }
+    .choose_box{
+        height: 3rem;
+        margin: 0.7rem 0;
+    }
+    .choose_box_text{
+        margin-right: 1rem;
+        font-size: 17px;
+    }
 }
