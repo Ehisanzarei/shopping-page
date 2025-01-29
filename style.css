@@ -178,13 +178,11 @@ body{
 
 
 .choose_container:hover{
-    /* height: 4.5rem; */
     transform: translateY(-0.25rem);
     -webkit-transform: translateY(-0.25rem);
     -moz-transform: translateY(-0.25rem);
     -ms-transform: translateY(-0.25rem);
     -o-transform: translateY(-0.25rem);
-
     box-shadow: 0 0.25rem 15px #0000002c;
 }
 
@@ -320,11 +318,29 @@ body{
     border-top-right-radius: 0.5rem;
 }
 
+.product_specifications_container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 4rem;
+    padding: 0.4rem 1rem 0 0;
+}
+
+.product_neme{
+    
+}
+
+.product_price{
+    color: var(--darkRed);
+}
+
+
 
 /* vip products */
 
 .vip_products_section{
     background-color: #f7c01c ;
+    margin: 0.7rem 0 3rem 0;
 }
 
 .vip_products_section_container{
@@ -337,7 +353,7 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-right: 2rem;
+    margin-right: 1.7rem;
     color: var(--white);
 }
 
@@ -373,31 +389,31 @@ body{
 
 
 .vip_products_container{
-    width: 55rem;
+    width: 56rem;
 }
 
 .vip_products{
     display: grid;
-    grid-template-columns: repeat(4,12.5rem);
-    grid-template-rows: 20rem;
+    grid-template-columns: repeat(4,13rem);
+    grid-template-rows: 19rem;
     justify-content: space-between;
 }
 
 .vip_product{
     background-color: #fff;
-    border-radius: 0.5rem;
-    margin: 2rem 0;
-    -webkit-border-radius: 0.5rem;
-    -moz-border-radius: 0.5rem;
-    -ms-border-radius: 0.5rem;
-    -o-border-radius: 0.5rem;
+    border-radius: 0.7rem;
+    margin: 1.3rem 0;
+    -webkit-border-radius: 0.7rem;
+    -moz-border-radius: 0.7rem;
+    -ms-border-radius: 0.7rem;
+    -o-border-radius: 0.7rem;
 }
 
 /* start footer */
 
 .footer{
     height: 8rem;
-    background-color: var(--darkRed);
+    background-color: #b6262d;
 }
 
 /* .footer_container{
@@ -405,3 +421,16 @@ body{
     background-color: var(--lightRed);
     margin-top: 2rem;
 } */
+
+
+@media only screen and (max-width: 1200px) {
+    .container {
+        max-width: 960px;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .container {
+        max-width: 720px;
+    }
+}
