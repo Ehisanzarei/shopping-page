@@ -131,14 +131,6 @@ body{
     font-size: 20px;
 }
 
-/* .hidden{
-    transition: all 3s ease;
-    -webkit-transition: all 3s ease;
-    -moz-transition: all 3s ease;
-    -ms-transition: all 3s ease;
-    -o-transition: all 3s ease;
-} */
-
 .back_btn_container{
     display: flex;
     justify-content: left;
