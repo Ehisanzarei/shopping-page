@@ -29,26 +29,25 @@ allProducts.forEach(function(){
         }
         
         allProductsContainer.style.transform = `translateX(${allCurrentIndex * 18.15}rem)`;
-    }
+}
     
     
-    bestProducts.forEach(function(){
-        bestI += 1
-    })
+bestProducts.forEach(function(){
+    bestI += 1
+})
     
-    bestProductsContainer.style.gridTemplateColumns = `repeat(${allI},16.5rem)`
+bestProductsContainer.style.gridTemplateColumns = `repeat(${bestI},16.5rem)`
     
-    function moveBestProducts() {
-        bestCurrentIndex += bestVisibleCount;
+function moveBestProducts() {
+    bestCurrentIndex += bestVisibleCount;
         
-        if (bestCurrentIndex + 3 >= totalBestProducts) {
-            bestCurrentIndex = 0;
-        }
+    if (bestCurrentIndex + 3 >= totalBestProducts) {
+        bestCurrentIndex = 0;
+    }
         
         bestProductsContainer.style.transform = `translateX(-${bestCurrentIndex * 18.15}rem)`;
         
-    }
+}
     
     setInterval(moveAllProducts, 2500);
     setInterval(moveBestProducts, 2500);
-
