@@ -12,6 +12,11 @@ const bestVisibleCount = 1;
 let bestCurrentIndex = 0;
 let bestI = 0
 
+let year = document.querySelector('.copyright_year')
+let date = new Date()
+
+console.log(date.getSeconds())
+
 moveAllProducts()
 moveBestProducts()
 
@@ -51,3 +56,6 @@ function moveBestProducts() {
     
     setInterval(moveAllProducts, 2500);
     setInterval(moveBestProducts, 2500);
+
+year.innerHTML = date.getFullYear()
+
