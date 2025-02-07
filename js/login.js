@@ -3,6 +3,8 @@ let inputPassword = document.getElementById('password')
 let phoneLabel = document.querySelector('.phone_label')
 let passwordLabel = document.querySelector('.password_label')
 
+let button = document.querySelector('.btn')
+
 
 inputphone.addEventListener('change', function(){
     if (inputphone.value){
@@ -20,4 +22,9 @@ inputPassword.addEventListener('change', function(){
     else(
         passwordLabel.classList.remove('passwordInputTrue')
     )
+})
+
+
+button.addEventListener('click', function(event){
+    event.preventDefault()
 })

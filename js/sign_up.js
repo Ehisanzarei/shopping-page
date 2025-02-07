@@ -126,3 +126,10 @@ sendAgainText.addEventListener('click', function(){
     sendAgainText.style.display = 'none'
     timerHandler()
 })
+
+let button = document.querySelector('.btn')
+
+
+button.addEventListener('click', function(event){
+  event.preventDefault()
+})
