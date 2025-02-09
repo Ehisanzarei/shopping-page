@@ -15,25 +15,21 @@ let header = document.querySelector('.header')
 let tableSection = document.querySelector('.table_section')
 
 addDataBtn.addEventListener('click', function(){
-    setTimeout(function(){
-        addDataModal.style.opacity = 1
-    })
     addDataModal.style.display = "flex"
-    header.style.filter = 'blur(5px)'
-    tableSection.style.filter = 'blur(5px)'
+
+    header.classList.toggle('blur')
+    tableSection.classList.toggle('blur')
 })
 
 addCloseModalBtn.forEach(function(close){
     close.addEventListener('click', function(event){
         event.preventDefault()
-        addDataModal.style.opacity = 0    
-        editModal.style.opacity = 0    
-        setTimeout(function(){
-            addDataModal.style.display = "none"
-            editModal.style.display = "none"
-        },200)
-        header.style.filter = 'blur(0px)'
-        tableSection.style.filter = 'blur(0px)'
+
+        addDataModal.style.display = "none"
+        editModal.style.display = "none"
+
+        header.classList.toggle('blur')
+        tableSection.classList.toggle('blur')
     })
 })
 
@@ -44,11 +40,9 @@ let editModal =document.querySelector('.edit_modal_section')
 editBtn.forEach(function(btn){
     btn.addEventListener('click', function(){
         editModal.style.display = "flex"
-        setTimeout(function(){
-            editModal.style.opacity = 1
-        })
-        header.style.filter = 'blur(5px)'
-        tableSection.style.filter = 'blur(5px)'
+
+        header.classList.toggle('blur')
+        tableSection.classList.toggle('blur')
     })
 })
 
@@ -58,4 +52,13 @@ let menu = document.querySelector('.menu_section')
 
 menuBtn.addEventListener('click', function(){
     menu.classList.toggle('hidden')
+})
+
+let questionIcon = document.querySelector('.question_icon_section')
+let questionSection = document.querySelector('.question_section')
+
+questionIcon.addEventListener('click', function(){    
+    questionSection.classList.toggle('showQuestionModal')
+    header.classList.toggle('blur')
+    tableSection.classList.toggle('blur')
 })

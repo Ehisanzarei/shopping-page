@@ -44,7 +44,7 @@ body{
 
 /* start */
 
-/* footer */
+/* header */
 
 .header_content_container{
     display: flex;
@@ -84,6 +84,34 @@ body{
 .menu_icon_section{
     cursor: pointer;
 }
+
+.question_icon_section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    width: 4rem;
+    height: 4rem;
+    background-color: var(--darkRed);
+    color: var(--white);
+    border-radius: 100%;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    -o-border-radius: 100%;
+}
+
+.question_icon{
+    font-size: 40px;
+    margin-top: 14px;
+}
+
+.add_user_section:active ,.question_icon_section:active{
+    background-color: var(--veryDarkRed);
+}
+
 
 /* main */
 
@@ -132,7 +160,6 @@ body{
     align-items: center;
     justify-content: center;
     width: 100%;
-    opacity: 0;
     transition: all 0.2s ease;
     -webkit-transition: all 0.2s ease;
     -moz-transition: all 0.2s ease;
@@ -141,8 +168,8 @@ body{
 }
 
 .add_form_container{
-    position: absolute;
-    top: 8rem;
+    position: fixed;
+    top: 6rem;
 }
 
 .add_modal_form{
@@ -182,6 +209,12 @@ body{
     padding-top: 0.55rem;
 }
 
+.error_text{
+    /* opacity: 0; */
+    font-size: 18px;
+    color: #ddb203;
+}
+
 .btn_container{
     display: flex;
     align-items: center;
@@ -215,17 +248,16 @@ body{
 /* edit form */
 
 .edit_modal_section{
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: center;
     width: 100%;
-    opacity: 0;
     transition: all 0.2s ease;
 }
 
 .edit_form_container{
-    position: absolute;
-    top: 8rem;
+    position: fixed;
+    top: 6rem;
 }
 
 .edit_modal_form{
@@ -281,3 +313,36 @@ body{
     right: 0rem;
 }
 
+/* question section */
+
+.question_section{
+    display: none;
+    justify-content: center;
+    width: 100%;
+}
+
+.question_container{
+    position: fixed;
+    top: 12rem;
+    width: 40rem;
+    background-color: var(--bubble_color);
+    border: 1px solid var(--darkRed);
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.text_container{
+    margin: 2rem;
+}
+
+.showQuestionModal{
+    display: flex;
+}
+
+.blur{
+    filter: blur(5px);
+    -webkit-filter: blur(5px);
+}

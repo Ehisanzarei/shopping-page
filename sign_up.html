@@ -12,30 +12,38 @@
             <div class="form_container">
                 <form class="form" action="">
                     <div class="form_content_container">
-                        <h1 class="form_title">ورود <span>|</span> ثبت نام</h1>
-                        <h4>کد تایید را وارد کنید</h4>
-                        <div class="code_inputs_container">
-                            <input class="code_input" type="text">
-                            <input class="code_input" type="text">
-                            <input class="code_input" type="text">
-                            <input class="code_input" type="text">
+                        <h1 class="form_title"> ثبت نام</h1>
+                        
+                        <div class="name_input_containet">
+                            <input id="name" class="input" type="text" placeholder=" " >
+                            <label class="label name_label" for="name">نام و نام خانوادگی </label>
                         </div>
+
+                        <div class="phone_input_containet">
+                            <input id="phone" class="input" type="text" placeholder=" " >
+                            <label class="label phone_label" for="phone">شماره موبایل</label>
+                        </div>
+
+                        <div class="password_input_container">
+                            <input id="password" class="input" type="text" placeholder=" " >
+                            <label class="label password_label" for="password">رمز عبور </label>
+                        </div>
+
                     </div>
                     <div class="error_text_container">
-                        <p class="eroor_text"> کد نامعتبر می باشد :( </p>
-                    </div>
-                    <div class="send_again_container">
-                        <p class="timer_text">زمان باقی‌مانده تا ارسال مجدد<span class="time_span">2:00</span></p>
-                        <p class="send_again_text">ارسال مجدد کد</p>
+                        <p class="eroor_text"> شماره موبایل نامعتبر می باشد :( </p>
                     </div>
                     <button class="btn">ورود</button>
+                    <div class="sign_up_text_container">
+                        <h4>اکانتی ندارید؟  <span><a class="sign_up_link" href="">ثبت نام کنید</a></span></h4>
+                    </div>
                 </form>
                 <div class="back_to_main">
-                    <a class="back_to_main_link" href="">برگشت </a>
+                    <a class="back_to_main_link" href="">برگشت به صفحه اصلی</a>
                 </div>
             </div>
         </div>
     </section>
-    <script src="./js/sign_up.js"></script>
+    <script src="./js/login.js"></script>
 </body>
 </html>

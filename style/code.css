@@ -58,7 +58,7 @@ body{
     background-color: var(--bubble_color);
     color: var(--veryDarkRed);
     width: 27rem;
-    height: 30rem;
+    height: 28rem;
     border: 1px solid #780c1566;
     border-radius: 1rem;
     -webkit-border-radius: 1rem;
@@ -69,79 +69,44 @@ body{
 
 .form_content_container{
     width: 100%;
-    height: 14.2rem;
-    margin-top: 3rem;
+    height: 13.5rem;
+    margin-top: 3.5rem;
 }
 
 .form_title{
-    margin: 0 0 2.5rem;
-    font-size: 34px;
+    margin: 1rem 0 2.5rem;
+    font-size: 28px;
 }
 
-.phone_input_containet,.password_input_container{
-    display: flex;
-    flex-direction: column;
+.code_inputs_container{
+    display: grid;
+    grid-template-columns: repeat(4,4.5rem);
     align-items: center;
-    width: 100%;
-    height: 4rem;
+    justify-content: space-between;
+    margin: 2rem auto 0;
+    width: 80%;
+    direction: ltr;
 }
 
-.phone_input_containet{
-    margin-bottom: 1.5rem;
-}
-
-.input{
-    background-color: #ffffff00;
+.code_input{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    height: 4.5rem;
+    background-color: var(--bubble_color);
+    font-size: 24px;
     color: var(--veryDarkRed);
     outline: none;
     border: 1px solid #780c154a;
-    padding: 1rem 0.5rem;
-    width: 80%;
-    height: 3.6rem;
-    font-size: 18px;
     border-radius: 10px;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     -ms-border-radius: 10px;
     -o-border-radius: 10px;
-    padding-left: 1rem;
-    direction: ltr;
 }
 
-.input:focus ~ .label{
-    font-size: 16px;
-    top: -5rem;
-    right: -6.5rem;
-    color: #780c15;
-}
-
-.input:focus ~ .password_label{
-    right: -7.7rem;
-}
-
-.input:focus{
+.code_input:focus{
     border: 1px solid var(--darkRed);
-}
-
-.label{
-    position: relative;
-    top: -3.2rem;
-    right: -5.5rem;
-    text-align: right;
-    color: #780c15c1;
-    background-color: var(--bubble_color);
-    padding: 0.5rem;
-    font-size: 20px;
-    font-weight: 600;
-    transition: all 0.2s ease;
-    -webkit-transition: all 0.2s ease;
-    -moz-transition: all 0.2s ease;
-    -ms-transition: all 0.2s ease;
-    -o-transition: all 0.2s ease;
-}
-
-.password_label{
-    right: -7rem;
 }
 
 .error_text_container{
@@ -151,18 +116,27 @@ body{
     font-size: 16px;
 }
 
-.code_page_link_container{
-    width: 80%;
-    text-align: right;
-    margin: 0.5rem auto 1rem;
-    padding-right: 0.2rem;
-}
-
-.code_page_link{
+.send_again_container{
     display: flex;
     align-items: center;
-    text-decoration: none;
-    color: var(--veryDarkRed);
+    margin: 0 auto;
+    width: 80%;
+    height: 3.5rem;
+    font-size: 15px;
+    padding-right: 0.3rem;
+}
+
+.timer_text{
+    color:#780c154a;
+}
+
+.time_span{
+    margin-right: 0.3rem;
+}
+
+.send_again_text{
+    display: none;
+    cursor: pointer;
 }
 
 .btn{
@@ -185,16 +159,6 @@ body{
     background-color: var(--veryDarkRed);
 }
 
-.sign_up_text_container{
-    margin: 1.5rem 0 0;
-    font-size: 15px;
-    word-spacing: -1px;
-}
-
-.sign_up_link{
-    color: var(--lightRed);
-}
-
 .back_to_main{
     width: 27rem;
     margin: 0.7rem;
@@ -208,18 +172,8 @@ body{
     word-spacing: -1px;
 }
 
-.phoneInputTrue{
-    font-size: 16px;
-    top: -5rem;
-    right: -6.5rem;
-    color: #780c15;
-}
-
-.passwordInputTrue{
-    font-size: 16px;
-    top: -5rem;
-    right: -7.7rem;
-    color: #780c15;
+.border{
+    border: 1px solid var(--darkRed);
 }
 
 @media only screen and (max-width: 1200px) {
@@ -246,43 +200,28 @@ body{
     }
     .form{
         width: 18rem;
-        height: 23.5rem;
+        height: 22rem;
     }
     .form_content_container{
-        height: 11rem;
+        height: 10.5rem;
         margin-top: 2.3rem;
     }
     .form_title{
         margin: 0 0 1.5rem;
         font-size: 23px;
     }
-    .phone_input_containet,.password_input_container{
-        height: 2.7rem;
+    .code_inputs_container{
+        grid-template-columns: repeat(4,3rem);
     }
-    .input{
-        height: 2.7rem;
-        font-size: 15px;
-    }
-    .label{
-        font-size: 16px;
-        top: -2.4rem;
-        right: -3.4rem;
-        padding: 0.3rem;
-    }
-    .input:focus ~ .label{
-        font-size: 12px;
-        top: -3.5rem;
-        right: -4rem;
-    }
-    .input:focus ~ .password_label{
-        right: -4.9rem;
-    }
-    .password_label{
-        right: -4.5rem;
+    .code_input{
+        height: 3rem;
     }
     .error_text_container{
-        font-size: 12px;
+        font-size: 14px;
         margin: 0;
+    }
+    .send_again_container{
+        font-size: 14px;
     }
     .code_page_link_container{
         margin: 0.5rem auto;
@@ -291,21 +230,6 @@ body{
     .btn{
         height: 2.5rem;
         padding: 0 0 0.5rem;
-    }
-    .sign_up_text_container{
-        font-size: 12px;
-    }
-    .phoneInputTrue{
-        font-size: 12px;
-        top: -3.5rem;
-        right: -4rem;
-        /* color: #780c15; */
-    }
-    .passwordInputTrue{
-        font-size: 12px;
-        top: -3.5rem;
-        right: -4.9rem;
-        /* color: #780c15; */
     }
     .back_to_main{
         font-size: 14px;
