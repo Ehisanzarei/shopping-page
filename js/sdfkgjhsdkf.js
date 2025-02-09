@@ -1,12 +1,19 @@
 let dataRowe = document.querySelectorAll(".table_rows")
 let removeIcon = document.querySelectorAll('.remove')
+let flag = true
+
+let questionIcon = document.querySelector('.question_icon_section')
+let questionSection = document.querySelector('.question_section')
 
 removeIcon.forEach(function(icons){
-        icons.addEventListener('click',function(){
+    icons.addEventListener('click',function(){
+        if(flag){
             this.parentElement.remove()
+
+            flag = false
+        }
     }) 
 })
-
 
 let addDataBtn = document.querySelector('.add_user_section')
 let addDataModal = document.querySelector('.add_modal_section')
@@ -15,21 +22,31 @@ let header = document.querySelector('.header')
 let tableSection = document.querySelector('.table_section')
 
 addDataBtn.addEventListener('click', function(){
-    addDataModal.style.display = "flex"
-
-    header.classList.toggle('blur')
-    tableSection.classList.toggle('blur')
+    if(flag){
+        addDataModal.style.display = "flex"
+    
+        header.classList.toggle('blur')
+        tableSection.classList.toggle('blur')
+        questionIcon.classList.toggle('blur')
+        
+        flag = false
+    }
 })
 
 addCloseModalBtn.forEach(function(close){
     close.addEventListener('click', function(event){
         event.preventDefault()
+        if(!flag){
+            addDataModal.style.display = "none"
+            editModal.style.display = "none"
+            questionSection.classList.remove('showQuestionModal')
+            
+            header.classList.toggle('blur')
+            tableSection.classList.toggle('blur')
+            questionIcon.classList.toggle('blur')
 
-        addDataModal.style.display = "none"
-        editModal.style.display = "none"
-
-        header.classList.toggle('blur')
-        tableSection.classList.toggle('blur')
+            flag = true
+        }
     })
 })
 
@@ -39,10 +56,15 @@ let editModal =document.querySelector('.edit_modal_section')
 
 editBtn.forEach(function(btn){
     btn.addEventListener('click', function(){
-        editModal.style.display = "flex"
-
-        header.classList.toggle('blur')
-        tableSection.classList.toggle('blur')
+        if(flag){
+            editModal.style.display = "flex"
+            
+            header.classList.toggle('blur')
+            tableSection.classList.toggle('blur')
+            questionIcon.classList.toggle('blur')
+            
+            flag = false
+        }
     })
 })
 
@@ -51,14 +73,18 @@ let menuBtn = document.querySelector('.menu_icon_section')
 let menu = document.querySelector('.menu_section')
 
 menuBtn.addEventListener('click', function(){
-    menu.classList.toggle('hidden')
+    if(flag){
+        menu.classList.toggle('hidden') 
+    }
 })
 
-let questionIcon = document.querySelector('.question_icon_section')
-let questionSection = document.querySelector('.question_section')
+questionIcon.addEventListener('click', function(){ 
+    if(flag){
+        questionSection.classList.toggle('showQuestionModal')
+        header.classList.toggle('blur')
+        tableSection.classList.toggle('blur')
+        questionIcon.classList.toggle('blur')
 
-questionIcon.addEventListener('click', function(){    
-    questionSection.classList.toggle('showQuestionModal')
-    header.classList.toggle('blur')
-    tableSection.classList.toggle('blur')
+        flag = false
+    }   
 })
