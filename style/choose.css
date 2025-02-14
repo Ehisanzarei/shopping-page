@@ -9,8 +9,6 @@
     --bubble_color: #f6e8e8;
 }
 
-/* f6e8e8 */
-
 @font-face {
     font-family: "dana ttf";
     src: url("../dana/@ghaleb_fre\(1\).ttf") format("ttf");
@@ -28,9 +26,6 @@
 body{
     display: grid;
     align-items: center;
-}
-
-body{
     font-family: "dana woff";
 }
 

@@ -9,8 +9,6 @@ removeIcon.forEach(function(icons){
     icons.addEventListener('click',function(){
         if(flag){
             this.parentElement.remove()
-
-            flag = false
         }
     }) 
 })

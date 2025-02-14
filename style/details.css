@@ -1,0 +1,177 @@
+:root{
+    --white: #fff;
+    --black: #000;
+    --darkRed: #bb1422;
+    --veryDarkRed: #780c15;
+    --lightRed: #ce6a72;
+    --pink: #fb96d5;
+    --lightPink: #f8c3dd;
+    --bubble_color: #f6e8e8;
+}
+
+
+@font-face {
+    font-family: "dana ttf";
+    src: url("../dana/@ghaleb_fre\(1\).ttf") format("ttf");
+}
+@font-face {
+    font-family: "dana woff";
+    src: url("../dana/@ghaleb_fre\(1\).woff") format("woff");
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0px;
+}
+
+body{
+    display: grid;
+    align-items: center;
+    font-family: "dana woff";
+}
+
+/* start */
+
+.main{
+    display: flex;
+    margin-top: 8rem;
+}
+
+/* image section */
+
+.img_section{
+    width: 55rem;
+    margin: 0 0 1rem 2.5rem;
+}
+
+.img_container{
+    width: 100%;
+}
+
+.product_img{
+    width: 100%;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+}
+
+/* details section */
+
+.details_section{
+    height: 100%;
+    width: 100%;
+    margin-top: 0.6rem;
+}
+
+.content{
+    margin: 0 0 2.5rem 0;
+}
+
+.title_text_container{
+    font-size: 24px;
+    word-spacing: -2px;
+    color: var(--veryDarkRed);
+}
+
+.price{
+    font-size: 34px;
+}
+
+.unit{
+    font-size: 16px;
+    padding-right: 0.2rem;
+}
+
+.send_time_container{
+    display: flex;
+    margin-bottom: 2rem;
+}
+
+.send_time_content_container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 13rem;
+    height: 2.4rem;
+    background-color: var(--bubble_color);
+    color: var(--veryDarkRed);
+    font-size: 13px;
+    margin:0 0 0 1.2rem;
+    padding: 0 0.6rem;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.send_time_value{
+    color:#bb1422;
+}
+
+.number_of_container{
+    margin-bottom: 2rem;
+    font-size: 14px;
+}
+
+.number_of_contant{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 9rem;
+    height: 2rem;
+    /* background-color: #e5e5e5; */
+    padding: 0.7rem;
+    padding-top: 1rem;
+    border: 1px solid #780c157d;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}
+
+.decrease,.increase{
+    font-size: 30px;
+    padding-top: 0.2rem;
+    cursor: pointer;
+}
+
+.number{
+    display: flex;
+    justify-content: center;
+    width: 1.5rem;
+    font-size: 24px;
+    color: var(--veryDarkRed);
+}
+
+
+.add_to_basket_btn{
+    width: 18rem;
+    height: 3.3rem;
+    font-family: "dana woff";
+    font-size: 24px;
+    background-color: var(--darkRed);
+    color: var(--white);
+    margin-bottom: 2rem;
+    border: none;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    cursor: pointer;
+}
+
+.add_to_basket_btn:active{
+    background-color: var(--veryDarkRed);
+}
+
+.description_text_container{
+    /* height: 100%; */
+    margin-bottom: 5rem;
+    font-size: 17px;
+    text-align: justify;
+}
