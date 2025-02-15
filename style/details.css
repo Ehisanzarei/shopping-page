@@ -9,7 +9,6 @@
     --bubble_color: #f6e8e8;
 }
 
-
 @font-face {
     font-family: "dana ttf";
     src: url("../dana/@ghaleb_fre\(1\).ttf") format("ttf");
@@ -34,7 +33,7 @@ body{
 
 .main{
     display: flex;
-    margin-top: 8rem;
+    margin-top: 7rem;
 }
 
 /* image section */
@@ -122,7 +121,6 @@ body{
     justify-content: space-between;
     width: 9rem;
     height: 2rem;
-    /* background-color: #e5e5e5; */
     padding: 0.7rem;
     padding-top: 1rem;
     border: 1px solid #780c157d;
@@ -147,8 +145,16 @@ body{
     color: var(--veryDarkRed);
 }
 
+.number_loading_img{
+    display: none;
+    width: 1.5rem;
+    padding-bottom: 0.3rem;
+}
 
 .add_to_basket_btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 18rem;
     height: 3.3rem;
     font-family: "dana woff";
@@ -169,9 +175,14 @@ body{
     background-color: var(--veryDarkRed);
 }
 
+.btn_loading_img{
+    display: none;
+    width: 2.3rem;
+}
+
 .description_text_container{
     /* height: 100%; */
-    margin-bottom: 5rem;
+    margin-bottom: 10rem;
     font-size: 17px;
     text-align: justify;
 }
