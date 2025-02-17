@@ -61,11 +61,31 @@ body{
 .details_section{
     height: 100%;
     width: 100%;
-    margin-top: 0.6rem;
 }
 
 .content{
-    margin: 0 0 2.5rem 0;
+    margin: 0 0 3rem 0;
+}
+
+.category_container{
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    width: fit-content;
+    height: 2.5rem;
+    padding: 0 0.7rem;
+    background-color: #f7be13;
+    color: var(--white);
+    margin-bottom: 1.8rem;
+    border-radius: 14px;
+    -webkit-border-radius: 14px;
+    -moz-border-radius: 14px;
+    -ms-border-radius: 14px;
+    -o-border-radius: 14px;
+}
+
+.category{
+    margin-left: 0.6rem;
 }
 
 .title_text_container{
@@ -85,7 +105,7 @@ body{
 
 .send_time_container{
     display: flex;
-    margin-bottom: 2rem;
+    margin-bottom: 2.65rem;
 }
 
 .send_time_content_container{
@@ -111,7 +131,7 @@ body{
 }
 
 .number_of_container{
-    margin-bottom: 2rem;
+    margin-bottom: 2.65rem;
     font-size: 14px;
 }
 
@@ -121,8 +141,8 @@ body{
     justify-content: space-between;
     width: 9rem;
     height: 2rem;
-    padding: 0.7rem;
-    padding-top: 1rem;
+    padding: 0.5rem;
+    padding-top: 0.8rem;
     border: 1px solid #780c157d;
     border-radius: 4px;
     -webkit-border-radius: 4px;
@@ -134,7 +154,12 @@ body{
 .decrease,.increase{
     font-size: 30px;
     padding-top: 0.2rem;
+    padding-right: 0.3rem;
     cursor: pointer;
+}
+
+.decrease{
+    padding-left: 0.3rem;
 }
 
 .number{
@@ -142,6 +167,7 @@ body{
     justify-content: center;
     width: 1.5rem;
     font-size: 24px;
+    padding-right: 0.3rem;
     color: var(--veryDarkRed);
 }
 
@@ -149,6 +175,13 @@ body{
     display: none;
     width: 1.5rem;
     padding-bottom: 0.3rem;
+    padding-right: 0.3rem;
+}
+
+.remove_icon{
+    display: none;
+    padding-bottom: 0.3rem;
+    padding-right: 0.2rem;
 }
 
 .add_to_basket_btn{
